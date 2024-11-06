@@ -22,7 +22,17 @@ public class SortingMachine {
     }
 
     public static void cubeSort(Integer[] array) {
-        // TODO: implement algorithm
+        cubeSort(array, array.length - 1);
+    }
+
+    private static void cubeSort(Integer[] array, int to) {
+        if (to > 0) {
+            cubeSort(array, to - 1);
+            if (array[to - 1] > array[to]) {
+                swap(array, to - 1, to);
+                cubeSort(array, to - 1);
+            }
+        }
     }
 
     public static void expoSort(Integer[] array) {
