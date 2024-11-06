@@ -1,4 +1,6 @@
 ### IntelliJ IDEA ###
+.idea/
+SortingAlgorithms.iml
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
